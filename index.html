@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Matii_DEV | Portfolio</title>   
+
+<meta name="description" content="Insert Your Site Description" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" type="image/png" href=" data:image/png;base64,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"/>
+
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="overlay"></div>
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    	<div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Witaj</h2>
+                </div>
+            </div>
+        </div>
+    	<h3 class="title-description">Przejdź niżej żeby zobaczyć moje projekty</h3>
+    </div>   
+	
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a id="goUp" href="#home-slider" title="Matii_DEV | Portfolio"> Matii_DEV | Portfolio</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Główna</a></li>
+                <li><a href="#work">Projekty</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Our Work Section -->
+<div id="work" class="page">
+	<div class="container">
+    	<!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Moje Projekty</h2>
+                    <h3 class="title-description">Sprawdź moje projekty na <a href="https://github.com/matii-dev">githubie</a>.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        
+        <!-- Portfolio Projects -->
+        <div class="row">
+        	<div class="span3">
+            	<!-- Filter -->
+                <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                    	<li class="type-work">technologia</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">Wszystkie</a></li>
+                        <li><a href="#filter" data-option-value=".javascript">JavaScript</a></li>
+                        <li><a href="#filter" data-option-value=".jquery">jQuery</a></li>
+                        <li><a href="#filter" data-option-value=".bootstrap">Bootstrap</a></li>
+                        <li><a href="#filter" data-option-value=".PHP">PHP</a></li>
+                        <li><a href="#filter" data-option-value=".symfony">Symfony</a></li>
+                    </ul>
+                </nav>
+                <!-- End Filter -->
+            </div>
+            
+            <div class="span9">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
+                        
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 javascript">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Reakcja" href="_include/img/work/full/javascript.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/javascript.jpg" alt="Sprawdź szybkość swojej reakcji naciskając na pojawiający się obiekt.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 jquery">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Sprawdzacz kodu" href="_include/img/work/full/jquery.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/jquery.jpg" alt="Aplikacja sprawdza poprawnośc kodu w HTML/CSS/JS.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 bootstrap">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Bootstrap" href="_include/img/work/full/bootstrap.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/bootstrap.jpg" alt="Moja pierwsza stronak jaką zrobiłem za pomocą bootstrapa.">
+                            </li>
+                        	<!-- End Item Project -->
+                           
+                           <!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 bootstrap">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Proste CV" href="_include/img/work/full/simpleCV.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/thumbs/simpleCV.jpg" alt="Proste CV zrobone za pomocą Bootstrapa.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 symfony">
+                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blog 'Inwertor'" href="_include/img/work/inwest_blog/main.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/inwest_blog/main.jpg" alt="Strona główna przykładowego bloga zrobiona w Symfony">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 symfony">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blog 'Inwertor'" href="_include/img/work/inwest_blog/jurnal.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/inwest_blog/jurnal.jpg" alt="Przykładowego posortowana tabela zrobiona w Symfony">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 symfony">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blog 'Inwertor'" href="_include/img/work/inwest_blog/form.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/inwest_blog/form.jpg" alt="Formularz zapisujący użykkowników do bazy danych zrobiony w Symfony.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 symfony">
+                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blog 'Inwertor'" href="_include/img/work/inwest_blog/adminpanel.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/inwest_blog/adminpanel.jpg" alt="Panel administracyjny zrobiony w Symfony pozwalający na edycję i usówanie zarejestrowanych użytkowników z bazy danych">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 symfony">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blog o samolotach" href="_include/img/work/airblog/main.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/airblog/main.jpg" alt="Strona główna przykładowego bloga zrobionego w Symfony.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 symfony">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blog o samolotach" href="_include/img/work/airblog/login.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img src="_include/img/work/airblog/login.jpg" alt="Formularz logowania oraz rejestracji zrobiony w Symfony.">
+                            </li>
+                        	<!-- End Item Project -->
+                        </ul>
+                    </section>
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- About Section -->
+<div id="about" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">O mnie</h2>
+                <h3 class="title-description">Kilka informacji o mnie... </h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+    	
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">DOŚWIADCZENIE</span>
+                </div>
+                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
+            </div>
+            <h3 class="profile-name">DOŚWIADCZENIE</h3>
+            <p class="profile-description">Junior Software Developer<br>Let's Deliver Sp. z o.o.<br>11/2015 - 11/2015</p>
+            <p class="profile-description">Stażysta w Dziale IT <br> Let's Deliver Sp. z o.o.<br>09/2015 - 10/2015</p>
+            <p class="profile-description">Konsultant Bankowy<br>Bank Millennium S.A.<br>11/2007 - 10/2013</p>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">EDUKACJA</span>
+                </div>
+                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
+            </div>
+            <h3 class="profile-name">EDUKACJA</h3>
+            <p class="profile-description">Pomorska Fundacja Inicjatyw Gospodarczych<br>„Code 2.0” - Bootcamp Front-end / Back-end<br>06/2015 - 08/2015</p>
+            <p class="profile-description">Politechnika Gdańska<br>Sieci i systemy rozproszone - magister (absolutorium)<br>09/2011 - 07/2013</p>
+            <p class="profile-description">Wyższa Szkoła Zarządzania w Gdańsku<br>Sieci i systemy komputerowe - inżynier<br>09/2007 - 05/2011</p>
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">MOJE CECHY</span>
+                </div>
+                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
+            </div>
+            <h3 class="profile-name">MOJE CECHY</h3>
+               <ul>
+                <li>Duża motywacja do zdobywania nowych kompetencji</li>
+                <li>Innowacyjność i kreatywne myślenie</li>
+                <li>Solidność i staranność</li>
+                <li>Łatwe nawiązywanie kontaktów w grupie</li>
+                <li>Umiejętność podejmowania decyzji poprzedzona logiczną analizą problemu</li>
+            </ul>
+        </div>
+        <!-- End Profile -->
+        
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Get in Touch</h2>
+                <h3 class="title-description">Jeśli masz jakies pytania - napisz.</h3>
+                <br>
+                <ul style="list-style-type:none">
+                    <li><a href="">matii.php.dev@gmail.com</a></li>
+                    <br>
+                    <li><a href="https://github.com/matii-dev">https://github.com/matii-dev</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+</div>
+</div>
+<!-- End Contact Section -->
+
+<!-- Footer -->
+<footer>
+	<p class="credits">2017 . <a href="" title=" Matii-DEV">Matii-DEV</a></p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
+</body>
+</html>
