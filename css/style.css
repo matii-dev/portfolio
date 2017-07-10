@@ -1,9 +1,3 @@
-/*--Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
- --*/
-/*-- Reset Code --*/
 body { 
 	padding: 0;
 	margin: 0;
@@ -222,7 +216,7 @@ h3.w3l-heading {
     font-weight: bold;
     letter-spacing: 5px;
     border:1px solid #ce7501;
-    width: 15%;
+    width: 25%;
     margin: 0 auto;
     padding: 0.4em;
 }
@@ -921,7 +915,7 @@ ul.address li ul.agileits-address-text li a:hover{
 @media screen and (max-width: 1080px){
 	h3.w3l-heading {
 		padding: 0.4em 0.5em;
-		width: 17%;
+		width: 27%;
 	}
 	.w3l-about {
 		padding:3em;
@@ -985,7 +979,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		margin: 1em auto 0;
 	}
 	h3.w3l-heading {
-		width: 22%;
+		width: 30%;
 	}
 	div#edu .container,div#exp .container {
 		width: 100%;
@@ -1100,7 +1094,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		text-align: center;
 	}
 	h3.w3l-heading {
-		width: 23%;
+		width: 33%;
 	}
 	.work-left {
 		padding: 5em 1em 0 0;
@@ -1117,7 +1111,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		width: 29%;
 	}
 	h3.w3l-heading {
-		width: 25%;
+		width: 35%;
 	}
 	.work-info h5 {
 		font-size: 1.2em;
@@ -1134,7 +1128,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		margin-top: 87px;
 	}
 	h3.w3l-heading {
-		width: 27%;
+		width: 36%;
 	}
 	.work-info h5 {
 		font-size: 1.1em;
@@ -1159,7 +1153,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		padding: 6em 0 0;
 	}
 	h3.w3l-heading {
-		width: 29%;
+		width: 39%;
 	}
 	.work-info h5 {
 		font-size: 1em;
@@ -1185,7 +1179,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		width: 35%;
 	}
 	h3.w3l-heading {
-		width: 32%;
+		width: 41%;
 	}
 	.w3_agile-contact input[type="submit"] {
 		width: 33%;
@@ -1215,7 +1209,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		letter-spacing: 2px;
 	}
 	h3.w3l-heading {
-		width: 38%;
+		width: 49%;
 	}
 	figcaption.w3layouts-caption h3 {
 		margin-top: 58px;
@@ -1292,7 +1286,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		padding: 7em 0 0;
 	}
 	h3.w3l-heading {
-		width: 45%;
+		width: 58%;
 	}
 	.filtr-item{
 		float:none;
@@ -1333,7 +1327,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		font-size: 3em;
 	}
 	h3.w3l-heading {
-		width: 49%;
+		width: 73%;
 	}
 	.w3l-button.banner-btn {
 		width: 54%;
@@ -1408,7 +1402,7 @@ ul.address li ul.agileits-address-text li a:hover{
 		width: 67%;
 	}
 	h3.w3l-heading {
-		width: 60%;
+		width: 82%;
 	}
 	.simplefilter li, .multifilter li, .sortandshuffle li {
 		padding: 6px;
